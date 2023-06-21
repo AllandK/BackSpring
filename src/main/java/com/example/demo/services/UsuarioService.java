@@ -51,6 +51,8 @@ UsuarioRepository usuarioRepository;
                                user ->{
                                    user.setEmail(usuario.getEmail());
                                    user.setNombre(usuario.getNombre());
+                                   user.setPrioridad(usuario.getPrioridad());
+                                   user.setEstado(usuario.getEstado());
                                    return usuarioRepository.save(user);
                                }
 
